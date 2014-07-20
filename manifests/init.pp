@@ -18,6 +18,8 @@ class spectrum2 (
                 "${package}-libpurple-backend",
   ],
   $use_external_repo = true,
+  $mysqluser = 'spectrum2',
+  $mysqlpassword,
 ) inherits spectrum2::params {
 
   package { $package: } -> package { $backends: }
