@@ -1,0 +1,113 @@
+[service]
+<% if @service_runas_user -%>
+user = <%= @service_runas_user %>
+<% end -%>
+<% if @service_runas_group -%>
+group = <%= @service_runas_group %>
+<% end -%>
+<% if @service_jid -%>
+jid = <%= @service_jid %>
+<% end -%>
+<% if @service_admin_jid -%>
+admin_jid = <%= @service_admin_jid %>
+<% end -%>
+<% if @service_password -%>
+password = <%= @service_password %>
+<% end -%>
+<% if @service_server -%>
+server = <%= @service_server %>
+<% end -%>
+<% if @service_port -%>
+port = <%= @service_port %>
+<% end -%>
+<% if @service_backend_host -%>
+backend_host = <%= @service_backend_host %>
+<% end -%>
+<% if @service_backend_port -%>
+backend_port = <%= @service_backend_port %>
+<% end -%>
+<% if @service_users_per_backend_real -%>
+users_per_backend = <%= @service_users_per_backend_real %>
+<% end -%>
+<% if @service_backend -%>
+backend = <%= @service_backend %>
+<% end -%>
+
+# backend specific configuration
+<% if @purple_protocol_real -%>
+protocol = <%= @purple_protocol_real %>
+<% end -%>
+<% if @cummuni_irc_server -%>
+irc_server = <%= @communi_irc_server %>
+<% end -%>
+<% if @cummuni_irc_identify -%>
+irc_identify = <%= @communi_irc_identify %>
+<% end -%>
+
+[identity]
+<% if @identity_name -%>
+name = <%= @identity_name %>
+<% end -%>
+<% if @identity_type -%>
+type = <%= @identity_type %>
+<% end -%>
+<% if @identity_category -%>
+category = <%= @identity_category %>
+<% end -%>
+
+[logging]
+<% if @logging_config -%>
+config = <%= @logging_config %>
+<% end -%>
+<% if @logging_backend_config -%>
+backend_config = <%= @logging_backend_config %>
+<% end -%>
+
+[database]
+<% if @database_type -%>
+type = <%= @database_type %>
+<% end -%>
+<% if @database_database_real -%>
+database = <%= @database_database_real %>
+<% end -%>
+<% if @database_server_real -%>
+server = <%= @database_server_real %>
+<% end -%>
+<% if @database_port_real -%>
+port = <%= @database_port_real %>
+<% end -%>
+<% if @database_user_real -%>
+user = <%= @database_user_real %>
+<% end -%>
+<% if @database_password -%>
+password = <%= @database_password %>
+<% end -%>
+<% if @database_prefix -%>
+prefix = <%= @database_prefix %>
+<% end -%>
+<% if @database_connectionstring_real -%>
+connectionstring = <%= @database_connectionstring_real %>
+<% end -%>
+
+[registration]
+<% if @registration_enable_public_registration -%>
+enable_public_registration = <%= @registration_enable_public_registration %>
+<% end -%>
+<% if @registration_username_label -%>
+username_label = <%= @registration_username_label %>
+<% end -%>
+<% if @registration_instructions -%>
+instructions = <%= @registration_instructions %>
+<% end -%>
+<% if @registration_require_local_account -%>
+require_local_account = <%= @registration_require_local_account %>
+<% end -%>
+<% if @registration_local_username_label -%>
+local_username_label = <%= @registration_local_username_label %>
+<% end -%>
+<% if @registration_local_account_server -%>
+local_account_server = <%= @registration_local_account_server %>
+<% end -%>
+<% if @registration_local_account_server_timeout -%>
+local_account_server_timeout = <%= @registration_local_account_server_timeout %>
+<% end -%>

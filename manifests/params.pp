@@ -6,7 +6,7 @@ class spectrum2::params {
   # no debian support at the moment...
   $package = 'spectrum2'
   $service = 'spectrum2'
-  $service_provider = 'redhat'
+  $service_provider = 'init'
   case $::operatingsystem {
     /^Fedora/: {
       case $::operatingsystemmajrelease {
